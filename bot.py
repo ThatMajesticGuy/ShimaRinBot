@@ -65,6 +65,7 @@ async def whatismilk():
 
 @client.command(pass_context=True)
 async def ping(ctx):
+    return await ctx.send('Pong! {0}'.format(round(bot.latency, 1))
     """Pong"""
 
 
